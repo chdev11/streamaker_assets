@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +9,85 @@
   <title>Sentimos sua falta - Streamaker TV</title>
 </head>
 
-<body style="margin:0;padding:0;background-color:#0d0d10;font-family:Arial,Helvetica,sans-serif;color:#ffffff;">
+<body style="margin:0;padding:0;background:#0b0b0e;font-family:Arial,Helvetica,sans-serif;color:#fff;">
 
-  <!-- PREHEADER -->
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">
-    Kick, novos Stream Tickets, Maker Pass, Chronos, Social, eventos e muito mais. Veja tudo que mudou na Streamaker TV.
+    Twitch, Kick, mais de 180 mil views por dia, novo Tier Lendário, novos recursos e muito mais.
   </div>
 
   <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
-         style="width:100%;background-color:#0d0d10;margin:0;padding:0;">
+    style="background:#0b0b0e;width:100%;">
     <tr>
       <td align="center" style="padding:28px 12px;">
 
         <table width="700" cellpadding="0" cellspacing="0" border="0" role="presentation"
-               style="width:100%;max-width:700px;background-color:#17171b;border-radius:18px;overflow:hidden;">
+          style="width:100%;max-width:700px;background:#17171b;border-radius:18px;overflow:hidden;">
 
-          <!-- HEADER / HERO -->
+          <!-- HERO -->
           <tr>
-            <td align="center"
-                style="padding:46px 30px 42px;background-color:#4b118b;">
+            <td align="center" bgcolor="#4b1188" style="padding:48px 30px 44px;">
 
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/logo-purple.png"
-                width="300"
-                alt="Streamaker TV"
-                style="display:block;width:100%;max-width:300px;height:auto;margin:0 auto 32px;border:0;"
-              >
+              <img src="https://chdev11.github.io/streamaker_assets/email/logo-purple.png" width="300" alt="Streamaker"
+                style="display:block;width:100%;max-width:300px;height:auto;margin:0 auto 30px;border:0;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:2px;color:#dfc3ff;text-transform:uppercase;">
-                MUITA COISA MUDOU POR AQUI
+              <div style="font-size:12px;line-height:18px;font-weight:bold;letter-spacing:2px;color:#dec0ff;">
+                TEM MUITA NOVIDADE ESPERANDO POR VOCÊ
               </div>
 
-              <h1 style="margin:12px 0 0;font-size:38px;line-height:44px;font-weight:800;color:#ffffff;">
-                Estamos sentindo<br>sua falta 💜
+              <h1 style="margin:12px 0 0;font-size:38px;line-height:45px;color:#fff;">
+                {{account_name}},<br>
+                estamos sentindo sua falta 💜
               </h1>
 
-              <p style="margin:20px auto 0;max-width:560px;font-size:17px;line-height:27px;color:#eee5f7;">
-                Faz mais de um mês desde sua última visita e, enquanto você esteve longe,
-                a Streamaker ganhou novas funcionalidades, novas interfaces e até
-                uma nova plataforma.
+              <p style="margin:20px auto 0;max-width:570px;font-size:17px;line-height:27px;color:#eee4f6;">
+                Faz um tempo que você não aparece por aqui.
+                Enquanto isso, a Streamaker ganhou uma nova plataforma,
+                novas interfaces, novos sistemas e uma comunidade ainda maior.
               </p>
 
-              <p style="margin:20px 0 0;font-size:18px;line-height:26px;font-weight:700;color:#ffffff;">
-                Olha só o que você perdeu. 👀
+              <p style="margin:19px 0 0;font-size:18px;line-height:27px;font-weight:bold;color:#fff;">
+                Olha só o que aconteceu enquanto você esteve fora. 👀
               </p>
 
-              <table cellpadding="0" cellspacing="0" border="0" role="presentation"
-                     style="margin:28px auto 0;">
+            </td>
+          </tr>
+
+
+          <!-- USER -->
+          <tr>
+            <td bgcolor="#141418" style="padding:25px 30px;">
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+                style="background:#241831;border:1px solid #54316e;border-radius:13px;">
                 <tr>
-                  <td align="center" bgcolor="#ffffff"
-                      style="border-radius:10px;">
-                    <a href="https://streamaker.tv"
-                       style="display:inline-block;padding:15px 28px;font-size:14px;line-height:18px;font-weight:800;color:#5713a1;text-decoration:none;">
-                      VOLTAR PARA A STREAMAKER
-                    </a>
+
+                  <td width="72" valign="middle" style="padding:18px 0 18px 18px;">
+                    <img src="{{photo}}" width="52" height="52" alt="{{account_name}}"
+                      style="display:block;width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid #a94cff;">
                   </td>
+
+                  <td valign="middle" style="padding:18px 10px 18px 12px;">
+                    <div style="font-size:16px;font-weight:bold;color:#fff;">
+                      {{account_name}}
+                    </div>
+
+                    <div style="margin-top:4px;font-size:13px;line-height:19px;color:#b9abbf;">
+                      Sua conta continua esperando por você.
+                    </div>
+                  </td>
+
+                  <td align="right" valign="middle" style="padding:18px 20px 18px 10px;">
+                    <div style="font-size:10px;font-weight:bold;color:#a797ad;letter-spacing:1px;">
+                      SEU SALDO
+                    </div>
+
+                    <div style="margin-top:3px;font-size:18px;font-weight:bold;color:#ffd54a;">
+                      {{balance_formatted}} Gold
+                    </div>
+
+                    {{crystals_html}}
+                  </td>
+
                 </tr>
               </table>
 
@@ -70,64 +95,68 @@
           </tr>
 
 
-          <!-- PURPLE + GREEN -->
+          <!-- PURPLE GREEN -->
           <tr>
-            <td style="padding:42px 30px 20px;">
+            <td style="padding:44px 30px 18px;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#bc75ff;text-transform:uppercase;">
-                STREAMAKER TV
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#b96cff;">
+                AGORA EM DUAS PLATAFORMAS
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
-                Agora somos Purple e Green
+              <h2 style="margin:7px 0 14px;font-size:29px;line-height:36px;color:#fff;">
+                Twitch ou Kick? Agora você escolhe.
               </h2>
 
-              <p style="margin:0;color:#bdbdc5;font-size:16px;line-height:25px;">
+              <p style="margin:0;color:#bebec6;font-size:16px;line-height:25px;">
                 Além da <strong style="color:#c781ff;">Streamaker Purple</strong>,
-                nossa plataforma para Twitch, agora temos também a
-                <strong style="color:#55ff21;">Streamaker Green</strong>,
-                pronta para impulsionar seu canal na Kick.
+                criada para Twitch, agora também temos a
+                <strong style="color:#66ff33;">Streamaker Green</strong>,
+                preparada para impulsionar seu canal na Kick.
               </p>
 
             </td>
           </tr>
 
+
+          <!-- PLATFORM CARDS -->
           <tr>
-            <td style="padding:12px 30px 25px;">
+            <td style="padding:14px 30px 25px;">
 
               <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                 <tr>
 
+                  <!-- TWITCH -->
                   <td width="48%" align="center" valign="middle"
-                      style="background-color:#222228;border:1px solid #34343d;border-radius:12px;padding:25px 15px;">
+                    style="background:#21182a;border:1px solid #593078;border-radius:14px;padding:26px 15px;">
 
-                    <img
-                      src="https://chdev11.github.io/streamaker_assets/email/logo-purple.png"
-                      width="235"
+                    <img src="https://chdev11.github.io/streamaker_assets/email/twitch.png" width="64" alt="Twitch"
+                      style="display:block;width:64px;max-width:64px;height:auto;margin:0 auto 20px;border:0;">
+
+                    <img src="https://chdev11.github.io/streamaker_assets/email/logo-purple.png" width="215"
                       alt="Streamaker Purple"
-                      style="display:block;width:100%;max-width:235px;height:auto;margin:0 auto;border:0;"
-                    >
+                      style="display:block;width:100%;max-width:215px;height:auto;margin:0 auto;border:0;">
 
-                    <div style="margin-top:18px;font-size:12px;font-weight:700;color:#a9a9b1;">
-                      PARA TWITCH
+                    <div style="margin-top:17px;font-size:11px;font-weight:bold;color:#c281ff;letter-spacing:1px;">
+                      STREAMAKER PURPLE
                     </div>
 
                   </td>
 
                   <td width="4%">&nbsp;</td>
 
+                  <!-- KICK -->
                   <td width="48%" align="center" valign="middle"
-                      style="background-color:#222228;border:1px solid #34343d;border-radius:12px;padding:25px 15px;">
+                    style="background:#18251a;border:1px solid #35613a;border-radius:14px;padding:26px 15px;">
 
-                    <img
-                      src="https://chdev11.github.io/streamaker_assets/email/logo-green.png"
-                      width="235"
+                    <img src="https://chdev11.github.io/streamaker_assets/email/kick.png" width="100" alt="Kick"
+                      style="display:block;width:100px;max-width:100px;height:auto;margin:0 auto 20px;border:0;">
+
+                    <img src="https://chdev11.github.io/streamaker_assets/email/logo-green.png" width="215"
                       alt="Streamaker Green"
-                      style="display:block;width:100%;max-width:235px;height:auto;margin:0 auto;border:0;"
-                    >
+                      style="display:block;width:100%;max-width:215px;height:auto;margin:0 auto;border:0;">
 
-                    <div style="margin-top:18px;font-size:12px;font-weight:700;color:#66ff3d;">
-                      PARA KICK
+                    <div style="margin-top:17px;font-size:11px;font-weight:bold;color:#65f573;letter-spacing:1px;">
+                      STREAMAKER GREEN
                     </div>
 
                   </td>
@@ -138,18 +167,23 @@
             </td>
           </tr>
 
+
+          <!-- GOLD -->
           <tr>
-            <td style="padding:0 30px 42px;">
+            <td style="padding:0 30px 44px;">
 
               <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
-                     style="background-color:#21192a;border-radius:12px;">
+                style="background:#21192a;border-radius:12px;">
                 <tr>
                   <td style="padding:19px 20px;border-left:4px solid #a64cff;">
+
                     <div style="font-size:15px;line-height:24px;color:#d9d2df;">
-                      As plataformas são distintas, mas não se preocupe:
-                      você pode <strong style="color:#ffffff;">transferir Gold entre elas</strong>
+                      Purple e Green são plataformas distintas, mas não se preocupe:
+                      você consegue
+                      <strong style="color:#fff;">transferir Gold entre elas</strong>
                       com uma taxa de 50%.
                     </div>
+
                   </td>
                 </tr>
               </table>
@@ -158,35 +192,162 @@
           </tr>
 
 
-          <!-- MICROSOFT STORE -->
+          <!-- NUMBERS -->
           <tr>
-            <td style="padding:40px 30px;border-top:1px solid #29292f;">
+            <td bgcolor="#121216" style="padding:43px 30px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#65d9ff;text-transform:uppercase;">
+              <div align="center" style="font-size:12px;font-weight:bold;letter-spacing:1.8px;color:#b96cff;">
+                A STREAMAKER HOJE
+              </div>
+
+              <h2 align="center" style="margin:8px 0 11px;font-size:28px;line-height:35px;color:#fff;">
+                A comunidade não parou de crescer.
+              </h2>
+
+              <p align="center"
+                style="margin:0 auto 27px;max-width:580px;color:#aaaab2;font-size:15px;line-height:24px;">
+                Todos os dias, nossa comunidade assiste streams,
+                descobre novos criadores e interage dentro da plataforma.
+              </p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                <tr>
+
+                  <td width="48%" align="center"
+                    style="background:#201725;border:1px solid #442952;border-radius:14px;padding:26px 10px;">
+
+                    <div style="font-size:35px;line-height:40px;font-weight:bold;color:#d293ff;">
+                      +180 MIL
+                    </div>
+
+                    <div style="margin-top:7px;font-size:11px;line-height:17px;font-weight:bold;color:#a7a0ac;">
+                      VIEWS GERADAS<br>
+                      TODOS OS DIAS
+                    </div>
+
+                  </td>
+
+                  <td width="4%">&nbsp;</td>
+
+                  <td width="48%" align="center"
+                    style="background:#201725;border:1px solid #442952;border-radius:14px;padding:26px 10px;">
+
+                    <div style="font-size:35px;line-height:40px;font-weight:bold;color:#fff;">
+                      +1.500
+                    </div>
+
+                    <div style="margin-top:7px;font-size:11px;line-height:17px;font-weight:bold;color:#a7a0ac;">
+                      COMENTÁRIOS E INTERAÇÕES<br>
+                      TODOS OS DIAS
+                    </div>
+
+                  </td>
+
+                </tr>
+              </table>
+
+              <p align="center"
+                style="margin:24px auto 0;max-width:570px;color:#d0d0d5;font-size:16px;line-height:25px;">
+                São mais de <strong style="color:#fff;">180 mil views geradas diariamente</strong>
+                e mais de <strong style="color:#fff;">1.500 comentários e interações por dia</strong>.
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- LEGENDARY -->
+          <tr>
+            <td style="padding:44px 30px;border-top:1px solid #29292f;">
+
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#ffc64a;">
+                NOVO TIER
+              </div>
+
+              <h2 style="margin:7px 0 14px;font-size:29px;line-height:36px;color:#fff;">
+                Chegou o Tier Lendário
+              </h2>
+
+              <p style="margin:0;color:#bebec6;font-size:16px;line-height:25px;">
+                Temos um novo objetivo no topo da Streamaker:
+                o <strong style="color:#ffd15c;">Tier Lendário</strong>.
+              </p>
+
+              <p style="margin:14px 0 0;color:#bebec6;font-size:16px;line-height:25px;">
+                E não existe segredo para chegar lá:
+                <strong style="color:#fff;">
+                  assista streams, interaja com outros usuários
+                  e participe ativamente da comunidade.
+                </strong>
+              </p>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+                style="margin:24px 0;background:#251f18;border:1px solid #64552d;border-radius:14px;">
+                <tr>
+                  <td align="center" style="padding:28px 20px;">
+
+                    <img src="https://chdev11.github.io/streamaker_assets/email/legendary.png" width="110"
+                      alt="Tier Lendário"
+                      style="display:block;width:110px;max-width:110px;height:auto;margin:0 auto 15px;border:0;">
+
+                    <div style="font-size:11px;font-weight:bold;letter-spacing:1.5px;color:#cba85b;">
+                      TIER LENDÁRIO
+                    </div>
+
+                    <div style="margin-top:8px;font-size:22px;line-height:29px;font-weight:bold;color:#fff;">
+                      ASSISTA • INTERAJA • EVOLUA
+                    </div>
+
+                    <div style="margin-top:15px;font-size:38px;line-height:44px;font-weight:bold;color:#ffd15c;">
+                      7x
+                    </div>
+
+                    <div style="font-size:11px;font-weight:bold;color:#aaa39a;letter-spacing:1px;">
+                      MULTIPLICADOR DE VIEWS
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:0;color:#bebec6;font-size:16px;line-height:25px;">
+                O Lendário é o tier mais alto da plataforma e possui
+                <strong style="color:#fff;">um enorme poder de promoção nas suas ativações</strong>.
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- MICROSOFT -->
+          <tr>
+            <td style="padding:44px 30px;border-top:1px solid #29292f;">
+
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#63d4ff;">
                 APLICATIVOS OFICIAIS
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
-                Baixe direto pela Microsoft Store
+              <h2 style="margin:7px 0 14px;font-size:28px;line-height:35px;color:#fff;">
+                Purple e Green na Microsoft Store
               </h2>
 
-              <p style="margin:0 0 13px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Tanto a Purple quanto a Green possuem aplicativos publicados
-                oficialmente na <strong style="color:#ffffff;">Microsoft Store</strong>.
+              <p style="margin:0 0 14px;color:#bebec6;font-size:16px;line-height:25px;">
+                Os dois aplicativos estão disponíveis oficialmente
+                na <strong style="color:#fff;">Microsoft Store</strong>.
               </p>
 
-              <p style="margin:0 0 23px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Nada de baixar <strong style="color:#ffffff;">.exe de procedência duvidosa</strong>
-                pela internet. 😅 Instale pela loja oficial e receba nossas
-                atualizações por lá.
+              <p style="margin:0 0 24px;color:#bebec6;font-size:16px;line-height:25px;">
+                Nada de baixar <strong style="color:#fff;">.exe de procedência duvidosa</strong>
+                em sites desconhecidos. 😅
               </p>
 
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/microsoft-store.png"
-                width="640"
-                alt="Streamaker Purple e Streamaker Green na Microsoft Store"
-                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;"
-              >
+              <img src="https://chdev11.github.io/streamaker_assets/email/microsoft-store.png" width="640"
+                alt="Streamaker na Microsoft Store"
+                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;">
+
+              <p align="center" style="margin:17px 0 0;color:#fff;font-size:14px;line-height:22px;font-weight:bold;">
+                Instalação e atualizações pela própria loja oficial da Microsoft.
+              </p>
 
             </td>
           </tr>
@@ -194,33 +355,35 @@
 
           <!-- STREAM TICKET -->
           <tr>
-            <td style="padding:40px 30px;border-top:1px solid #29292f;">
+            <td style="padding:44px 30px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#bc75ff;text-transform:uppercase;">
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#bc75ff;">
                 STREAM TICKET
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
+              <h2 style="margin:7px 0 14px;font-size:28px;line-height:35px;color:#fff;">
                 Promover sua live ficou muito mais simples 🎟️
               </h2>
 
-              <p style="margin:0;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Esqueça configurações complicadas. Agora basta selecionar métricas
-                próximas do resultado que deseja atingir:
-                <strong style="color:#ffffff;">multiplicador de views, duração da live
-                e quantidade de Stream Tickets.</strong>
+              <p style="margin:0;color:#bebec6;font-size:16px;line-height:25px;">
+                Agora você seleciona métricas próximas do resultado que deseja alcançar.
               </p>
 
-              <p style="margin:14px 0 22px;color:#d8a9ff;font-size:17px;line-height:25px;font-weight:700;">
-                Você define seu objetivo. O resto é conosco.
+              <p style="margin:14px 0;color:#bebec6;font-size:16px;line-height:25px;">
+                Escolha seu
+                <strong style="color:#fff;">multiplicador de views</strong>,
+                a <strong style="color:#fff;">duração da live</strong>
+                e quantos <strong style="color:#fff;">Stream Tickets</strong>
+                deseja utilizar.
               </p>
 
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/stream-ticket.png"
-                width="640"
-                alt="Nova interface de promoção personalizada da Streamaker"
-                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;"
-              >
+              <p style="margin:0 0 23px;color:#d69fff;font-size:17px;line-height:25px;font-weight:bold;">
+                Você escolhe seu objetivo. O resto é conosco.
+              </p>
+
+              <img src="https://chdev11.github.io/streamaker_assets/email/stream-ticket.png" width="640"
+                alt="Promoção personalizada Streamaker"
+                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;">
 
             </td>
           </tr>
@@ -228,59 +391,67 @@
 
           <!-- MAKER PASS -->
           <tr>
-            <td style="padding:40px 30px;border-top:1px solid #29292f;">
+            <td style="padding:44px 30px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#bc75ff;text-transform:uppercase;">
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#bc75ff;">
                 MAKER PASS
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
-                Um sorteio mais justo e transparente 🎲
+              <h2 style="margin:7px 0 14px;font-size:28px;line-height:35px;color:#fff;">
+                Um novo sorteio baseado em probabilidades 🎲
               </h2>
 
-              <p style="margin:0;color:#bdbdc5;font-size:16px;line-height:25px;">
-                O Maker Pass agora utiliza um sistema de
-                <strong style="color:#ffffff;">sorteio baseado em probabilidades</strong>.
-                Seu Tier, plano VIP e quantidade de ativações no mês ajudam a
-                formar sua pontuação.
+              <p style="margin:0;color:#bebec6;font-size:16px;line-height:25px;">
+                Para tornar o Maker Pass mais justo e transparente,
+                as ativações agora acontecem através de
+                <strong style="color:#fff;">pontuação e probabilidades</strong>.
+              </p>
+
+              <p style="margin:14px 0 0;color:#bebec6;font-size:16px;line-height:25px;">
+                Seu <strong style="color:#fff;">Tier</strong>,
+                seu <strong style="color:#fff;">plano VIP</strong>
+                e a quantidade de ativações já recebidas no mês ajudam
+                a formar sua pontuação.
               </p>
 
               <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
-                     style="margin:20px 0;background-color:#21192a;border-radius:12px;">
+                style="margin:22px 0;background:#21192a;border-radius:12px;">
                 <tr>
-                  <td align="center" style="padding:20px;">
-                    <div style="font-size:17px;line-height:25px;font-weight:700;color:#ffffff;">
+                  <td align="center" style="padding:21px;">
+                    <div style="font-size:17px;line-height:25px;font-weight:bold;color:#fff;">
                       Quanto maior sua pontuação,
-                      <span style="color:#c981ff;">maiores suas chances.</span>
+                      <span style="color:#cf8cff;">maiores suas chances.</span>
                     </div>
                   </td>
                 </tr>
               </table>
 
-              <p style="margin:0 0 13px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Não é VIP? <strong style="color:#ffffff;">Não tem problema.</strong>
+              <p style="margin:0 0 14px;color:#bebec6;font-size:16px;line-height:25px;">
+                Não é VIP? Não tem problema.
                 Em horários aleatórios do dia, o sistema também seleciona
-                randomicamente usuários Free e Elite para concorrer.
+                usuários <strong style="color:#fff;">Free e Elite</strong>.
               </p>
 
-              <p style="margin:0 0 13px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Ganhou? Um Maker Pass é consumido do inventário e
-                <strong style="color:#ffffff;">você fica em destaque durante uma hora inteira.</strong>
+              <p style="margin:0 0 14px;color:#bebec6;font-size:16px;line-height:25px;">
+                Ganhou?
+                <strong style="color:#fff;">
+                  1 Maker Pass é consumido e você fica em destaque por uma hora inteira.
+                </strong>
               </p>
 
-              <p style="margin:0 0 22px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Não ganhou? <strong style="color:#65f47b;">Você não perde seu Maker Pass.</strong>
-                Ele continua no inventário para as próximas oportunidades.
-                Além disso, agora você acompanha os participantes e suas pontuações
-                em tempo real.
+              <p style="margin:0 0 23px;color:#bebec6;font-size:16px;line-height:25px;">
+                Não ganhou?
+                <strong style="color:#66ef79;">Você não perde o Maker Pass.</strong>
+                Ele continua no seu inventário para os próximos sorteios.
               </p>
 
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/maker-pass.png"
-                width="640"
-                alt="Sistema de pontuação e sorteio do Maker Pass"
-                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;"
-              >
+              <img src="https://chdev11.github.io/streamaker_assets/email/maker-pass.png" width="640" alt="Maker Pass"
+                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;">
+
+              <p align="center" style="margin:18px auto 0;color:#c9c9cf;font-size:14px;line-height:22px;">
+                E agora você acompanha participantes e pontuações em tempo real
+                para saber como estão suas chances no próximo sorteio.
+              </p>
 
             </td>
           </tr>
@@ -288,34 +459,26 @@
 
           <!-- CHRONOS -->
           <tr>
-            <td style="padding:40px 30px;border-top:1px solid #29292f;">
+            <td style="padding:44px 30px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#59e56c;text-transform:uppercase;">
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#60e274;">
                 CHRONOS
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
-                Quer cravar seu horário? ⏰
+              <h2 style="margin:7px 0 14px;font-size:28px;line-height:35px;color:#fff;">
+                Quer garantir aquele horário? ⏰
               </h2>
 
-              <p style="margin:0 0 13px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                O coração do Chronos continua o mesmo.
+              <p style="margin:0 0 23px;color:#bebec6;font-size:16px;line-height:25px;">
+                O Chronos continua funcionando do jeito que você conhece.
+                Escolha o horário desejado e faça seu lance em
+                <strong style="color:#ffc947;">Gold</strong>
+                ou <strong style="color:#c683ff;">Crystals</strong>
+                para garantir aquela hora de exclusividade para sua stream.
               </p>
 
-              <p style="margin:0 0 22px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Quer reservar um horário de destaque para sua stream?
-                Escolha a hora e faça seu lance utilizando
-                <strong style="color:#ffc400;">Gold</strong> ou
-                <strong style="color:#c981ff;">Crystals</strong>.
-                O maior lance garante aquela hora de exclusividade.
-              </p>
-
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/chronos.png"
-                width="640"
-                alt="Leilões Chronos da Streamaker"
-                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;"
-              >
+              <img src="https://chdev11.github.io/streamaker_assets/email/chronos.png" width="640" alt="Chronos"
+                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;">
 
             </td>
           </tr>
@@ -323,113 +486,110 @@
 
           <!-- SOCIAL -->
           <tr>
-            <td style="padding:40px 30px;border-top:1px solid #29292f;">
+            <td style="padding:44px 30px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#bc75ff;text-transform:uppercase;">
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#bc75ff;">
                 SOCIAL
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
-                A Streamaker é muito mais que números 👥
+              <h2 style="margin:7px 0 14px;font-size:28px;line-height:35px;color:#fff;">
+                A Streamaker está cada vez mais Social 👥
               </h2>
 
-              <p style="margin:0 0 13px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Criamos uma nova tela <strong style="color:#ffffff;">Social</strong>
-                para aproximar ainda mais nossa comunidade.
+              <p style="margin:0;color:#bebec6;font-size:16px;line-height:25px;">
+                A Streamaker não é apenas sobre números e views.
+                <strong style="color:#fff;">É sobre comunidade.</strong>
               </p>
 
-              <p style="margin:0 0 22px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Conheça outros membros, edite sua <strong style="color:#ffffff;">BIO</strong>,
-                escolha seu banner, vincule sua conta da
-                <strong style="color:#ffffff;">Steam</strong>, mostre seus jogos,
-                exiba suas badges, conquistas, Tier, VIP e muito mais.
+              <p style="margin:14px 0 23px;color:#bebec6;font-size:16px;line-height:25px;">
+                Conheça outros membros, edite sua
+                <strong style="color:#fff;">BIO</strong>,
+                escolha seu banner, acompanhe seguidores,
+                ostente suas badges, Tier e VIP e vincule sua
+                <strong style="color:#fff;">Steam</strong>
+                para mostrar seus jogos.
               </p>
 
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/social.png"
-                width="640"
-                alt="Novo perfil Social da Streamaker TV"
-                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;"
-              >
+              <img src="https://chdev11.github.io/streamaker_assets/email/social.png" width="640"
+                alt="Perfil Social Streamaker"
+                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;">
 
-              <p style="margin:20px 0 0;text-align:center;color:#d4a2ff;font-size:17px;line-height:25px;font-weight:700;">
-                E ainda tem muita coisa vindo por aí. 👀
+              <p align="center" style="margin:19px 0 0;color:#d49cff;font-size:17px;line-height:25px;font-weight:bold;">
+                E isso é só o começo. 👀
               </p>
 
             </td>
           </tr>
 
 
-          <!-- EVENT -->
+          <!-- WORLD CUP -->
           <tr>
-            <td style="padding:40px 30px;border-top:1px solid #29292f;">
+            <td bgcolor="#141418" style="padding:44px 30px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:1.5px;color:#ffce4a;text-transform:uppercase;">
+              <div style="font-size:12px;font-weight:bold;letter-spacing:1.5px;color:#ffc94b;">
                 EVENTOS ESPECIAIS
               </div>
 
-              <h2 style="margin:7px 0 13px;font-size:27px;line-height:34px;color:#ffffff;">
-                E os eventos? Estão maiores que nunca. 🏆
+              <h2 style="margin:7px 0 14px;font-size:28px;line-height:35px;color:#fff;">
+                Você viu o que aconteceu na World Cup 2026? 🌎
               </h2>
 
-              <p style="margin:0 0 22px;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Sazonalmente realizamos eventos especiais com desafios,
-                itens exclusivos, conquistas, Gift Cards e várias outras premiações.
+              <p style="margin:0 0 24px;color:#bebec6;font-size:16px;line-height:25px;">
+                Periodicamente realizamos eventos especiais com itens,
+                conquistas, desafios e até premiações reais.
               </p>
 
-              <img
-                src="https://chdev11.github.io/streamaker_assets/email/world-cup-2026.png"
-                width="640"
+              <img src="https://chdev11.github.io/streamaker_assets/email/world-cup-2026.png" width="640"
                 alt="Streamaker World Cup 2026"
-                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;"
-              >
-
-              <h3 style="margin:24px 0 10px;font-size:21px;line-height:28px;color:#ffffff;">
-                Ficou sabendo do nosso último evento?
-              </h3>
-
-              <p style="margin:0;color:#bdbdc5;font-size:16px;line-height:25px;">
-                A <strong style="color:#ffffff;">Streamaker World Cup 2026</strong>
-                reuniu mais de mil usuários da comunidade.
-              </p>
+                style="display:block;width:100%;max-width:640px;height:auto;margin:0 auto;border:0;border-radius:12px;">
 
               <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
-                     style="margin-top:22px;">
+                style="margin-top:24px;">
                 <tr>
 
-                  <td width="48%" align="center"
-                      style="background-color:#222228;border-radius:12px;padding:22px 8px;">
-                    <div style="font-size:30px;line-height:35px;font-weight:800;color:#ffffff;">
-                      +1.000
+                  <td width="48%" align="center" style="background:#222228;border-radius:12px;padding:24px 8px;">
+
+                    <div style="font-size:32px;line-height:38px;font-weight:bold;color:#fff;">
+                      +1.200
                     </div>
-                    <div style="margin-top:6px;font-size:11px;line-height:16px;font-weight:700;color:#92929b;">
-                      USUÁRIOS PARTICIPARAM
+
+                    <div style="margin-top:6px;font-size:11px;font-weight:bold;color:#97979f;">
+                      PARTICIPANTES
                     </div>
+
                   </td>
 
                   <td width="4%">&nbsp;</td>
 
-                  <td width="48%" align="center"
-                      style="background-color:#222228;border-radius:12px;padding:22px 8px;">
-                    <div style="font-size:30px;line-height:35px;font-weight:800;color:#63ed77;">
-                      +R$ 350
+                  <td width="48%" align="center" style="background:#222228;border-radius:12px;padding:24px 8px;">
+
+                    <div style="font-size:32px;line-height:38px;font-weight:bold;color:#65ef79;">
+                      +R$ 1.000
                     </div>
-                    <div style="margin-top:6px;font-size:11px;line-height:16px;font-weight:700;color:#92929b;">
-                      EM GIFT CARDS
+
+                    <div style="margin-top:6px;font-size:11px;font-weight:bold;color:#97979f;">
+                      EM PREMIAÇÕES
                     </div>
+
                   </td>
 
                 </tr>
               </table>
 
-              <p style="margin:20px 0 0;color:#bdbdc5;font-size:16px;line-height:25px;">
-                Os melhores colocados levaram mais de
-                <strong style="color:#ffffff;">R$ 350 em Gift Cards</strong>,
-                além das diversas premiações distribuídas durante o evento.
+              <p style="margin:22px 0 0;color:#bebec6;font-size:16px;line-height:25px;">
+                Mais de
+                <strong style="color:#fff;">1.200 pessoas participaram</strong>
+                da Streamaker World Cup 2026.
               </p>
 
-              <p style="margin:14px 0 0;color:#ffffff;font-size:17px;line-height:25px;font-weight:700;">
-                E novos eventos estão por vir.
+              <p style="margin:12px 0 0;color:#bebec6;font-size:16px;line-height:25px;">
+                Durante o evento, distribuímos
+                <strong style="color:#68ef7a;">mais de R$ 1.000 em premiações</strong>,
+                além de diversos itens e recompensas dentro da plataforma.
+              </p>
+
+              <p style="margin:15px 0 0;color:#fff;font-size:17px;line-height:25px;font-weight:bold;">
+                E novos eventos ainda estão por vir. 👀
               </p>
 
             </td>
@@ -441,19 +601,21 @@
             <td style="padding:40px 30px;border-top:1px solid #29292f;">
 
               <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
-                     style="background-color:#18231b;border:1px solid #315c39;border-radius:13px;">
+                style="background:#18231b;border:1px solid #315c39;border-radius:13px;">
                 <tr>
                   <td style="padding:25px;">
 
-                    <div style="font-size:21px;line-height:28px;font-weight:800;color:#66ef79;">
-                      🛡️ Crescimento com segurança
+                    <div style="font-size:21px;line-height:28px;font-weight:bold;color:#66ef79;">
+                      🛡️ Tudo isso com usuários reais
                     </div>
 
                     <p style="margin:12px 0 0;color:#c8d1ca;font-size:15px;line-height:24px;">
-                      Tudo isso mantendo aquilo que sempre foi prioridade para nós:
-                      <strong style="color:#ffffff;">usuários reais, segurança,
-                      respeito aos termos das plataformas e uma comunidade
-                      moderada e saudável.</strong>
+                      Seguimos construindo a Streamaker mantendo aquilo
+                      que sempre foi prioridade:
+                      <strong style="color:#fff;">
+                        usuários reais, segurança, respeito aos termos das plataformas
+                        e uma comunidade ativa, moderada e saudável.
+                      </strong>
                     </p>
 
                   </td>
@@ -466,37 +628,39 @@
 
           <!-- FINAL CTA -->
           <tr>
-            <td align="center"
-                style="padding:52px 30px 45px;background-color:#121216;border-top:1px solid #29292f;">
+            <td align="center" bgcolor="#4b1188" style="padding:54px 30px 47px;border-top:1px solid #29292f;">
 
-              <div style="font-size:12px;line-height:18px;font-weight:700;letter-spacing:2px;color:#b875fa;text-transform:uppercase;">
-                VOLTE PARA CASA
+              <div style="font-size:12px;font-weight:bold;letter-spacing:2px;color:#dfc0ff;">
+                SENTIMOS SUA FALTA
               </div>
 
-              <h2 style="margin:10px 0 0;font-size:31px;line-height:38px;color:#ffffff;">
+              <h2 style="margin:10px 0 0;font-size:32px;line-height:39px;color:#fff;">
                 Muita coisa mudou.
               </h2>
 
-              <p style="margin:9px 0 0;font-size:19px;line-height:28px;color:#d1d1d6;">
+              <p style="margin:10px auto 0;max-width:500px;font-size:18px;line-height:28px;color:#e8ddef;">
                 Mas seu lugar continua aqui. 💜
               </p>
 
-              <table cellpadding="0" cellspacing="0" border="0" role="presentation"
-                     style="margin:27px auto 0;">
+              <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin:28px auto 0;">
                 <tr>
-                  <td align="center" bgcolor="#7518d1"
-                      style="border-radius:10px;">
+                  <td align="center" bgcolor="#ffffff" style="border-radius:10px;">
+
                     <a href="https://streamaker.tv"
-                       style="display:inline-block;padding:17px 38px;font-size:15px;line-height:20px;font-weight:800;color:#ffffff;text-decoration:none;">
-                      VOLTAR PARA A STREAMAKER TV
+                      style="display:inline-block;padding:17px 38px;font-size:15px;line-height:20px;font-weight:bold;color:#5713a1;text-decoration:none;">
+                      VOLTAR PARA MINHA CONTA
                     </a>
+
                   </td>
                 </tr>
               </table>
 
-              <p style="margin:30px 0 0;font-size:15px;line-height:23px;color:#8f8f98;">
-                Estamos com saudades.<br>
-                <strong style="color:#b7b7be;">Equipe Streamaker TV</strong>
+              <p style="margin:31px 0 0;font-size:16px;line-height:24px;color:#e7d7f1;">
+                Estamos com saudades. 💜
+              </p>
+
+              <p style="margin:5px 0 0;font-size:13px;line-height:20px;color:#c7add9;">
+                Equipe Streamaker TV
               </p>
 
             </td>
@@ -505,11 +669,18 @@
 
           <!-- FOOTER -->
           <tr>
-            <td align="center"
-                style="padding:22px 25px;background-color:#0c0c0f;color:#66666f;font-size:11px;line-height:18px;">
+            <td align="center" bgcolor="#0b0b0e" style="padding:25px;color:#686870;font-size:11px;line-height:19px;">
 
               Você está recebendo este e-mail porque possui uma conta na Streamaker TV.
-              <br>
+
+              <br><br>
+
+              <a href="{{unsubscribe_url}}" style="color:#8e8e96;text-decoration:underline;">
+                Não quero mais receber e-mails promocionais
+              </a>
+
+              <br><br>
+
               © 2026 Streamaker TV
 
             </td>
@@ -522,4 +693,5 @@
   </table>
 
 </body>
+
 </html>
